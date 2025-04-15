@@ -208,55 +208,63 @@ a {
 <body>
   <div class="container">
     <h2>Registration Form</h2>
-    <form id="registrationForm">
-      <form action="#">
+    <form id="registrationForm" action="#">
       <div class="form-group">
-        <div class="form-group">
-          <label for="Full Name">Full Name:</label>
-          <input type="Full Name" id="Full Name" name="Full Name" required>
-        </div>
-        <label for="user name">Username:</label>
-        <input type="text" id="user name" name="user name" required>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
       </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
       </div>
+
       <div class="form-group">
-        <label for="Phone number">Phone number:</label>
-        <input type="Phone number" id="Phone number" name="Phone number" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
       </div>
-      <div>
-      <label>Course</label>
-      <select>
-        <option value="Course">course</option>
-        <option value="BCA">BCA</option>
-        <option value="MCA">MCA</option>
-        <option value="MBA">MBA</option>
-        <option value="B.tech">B.tech</option>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">--Select Course--</option>
+          <option value="BCA">BCA</option>
+          <option value="MCA">MCA</option>
+          <option value="MBA">MBA</option>
+          <option value="BTech">B.Tech</option>
         </select>
-      </br></div>
-      <div>
-        <br>
-        <label>Gender</label>
-        <input type="radio"name="Gender"/>Male<br>
-        <input type="radio"name="Gender"/>Female<br>
-        <input type="radio"name="Gender"/>Other<br>
-        </div>
-        <div class="form-group">
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other
+      </div>
+
+      <div class="form-group">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
       </div>
+
       <div class="form-group">
-        <label for="Confirm password">Confirm password:</label>
-        <input type="Confirm password" id="Confirm password" name="Confirm password" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
       </div>
+
       <button type="submit">Register</button>
     </form>
   </div>
+
   <script src="ja.js"></script>
 </body>
 </html>
+
 
 
               
